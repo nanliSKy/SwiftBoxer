@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/nanliSKy/SwiftBoxer'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'nanliSKy' => 'nan.li02@hand-china.com' }
+  s.author           = { 'nanliSKy' => '827752527@qq.com' }
   s.source           = { :git => 'https://github.com/nanliSKy/SwiftBoxer.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -33,22 +33,22 @@ TODO: Add long description of the pod here.
   s.swift_version = '4.2'
 
   s.subspec 'Core' do |core|
-      core.source_files = 'SoSwiftHelper/Classes/Core/**/*.swift'
+      core.source_files = 'SwiftBoxer/Classes/Core/**/*.swift'
   end
   
   s.subspec 'Helper' do |helper|
-    helper.source_files = 'SoSwiftHelper/Classes/Helper/**/*.swift'
+    helper.source_files = 'SwiftBoxer/Classes/Helper/**/*.swift'
   end
 
   s.subspec 'Foundation' do |f|
-      f.source_files = 'SoSwiftHelper/Classes/Foundation/**/*.swift'
-      f.dependency 'SoSwiftHelper/Core'
+      f.source_files = 'SwiftBoxer/Classes/Foundation/**/*.swift'
+      f.dependency 'SwiftBoxer/Core'
   end
 
   s.subspec 'UIKit' do |uikit|
-      uikit.source_files = 'SoSwiftHelper/Classes/UIKit/**/*.swift'
-      uikit.dependency 'SoSwiftHelper/Core'
-      uikit.dependency 'SoSwiftHelper/Foundation'
+      uikit.source_files = 'SwiftBoxer/Classes/UIKit/**/*.swift'
+      uikit.dependency 'SwiftBoxer/Core'
+      uikit.dependency 'SwiftBoxer/Foundation'
   end
   
   # s.resource_bundles = {
