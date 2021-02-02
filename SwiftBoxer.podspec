@@ -30,7 +30,26 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SwiftBoxer/Classes/**/*'
+  s.swift_version = '4.2'
+
+  s.subspec 'Core' do |core|
+      core.source_files = 'SoSwiftHelper/Classes/Core/**/*.swift'
+  end
+  
+  s.subspec 'Helper' do |helper|
+    helper.source_files = 'SoSwiftHelper/Classes/Helper/**/*.swift'
+  end
+
+  s.subspec 'Foundation' do |f|
+      f.source_files = 'SoSwiftHelper/Classes/Foundation/**/*.swift'
+      f.dependency 'SoSwiftHelper/Core'
+  end
+
+  s.subspec 'UIKit' do |uikit|
+      uikit.source_files = 'SoSwiftHelper/Classes/UIKit/**/*.swift'
+      uikit.dependency 'SoSwiftHelper/Core'
+      uikit.dependency 'SoSwiftHelper/Foundation'
+  end
   
   # s.resource_bundles = {
   #   'SwiftBoxer' => ['SwiftBoxer/Assets/*.png']
