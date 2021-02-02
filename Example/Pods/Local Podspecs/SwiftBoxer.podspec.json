@@ -1,0 +1,22 @@
+{
+  "name": "SwiftBoxer",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftBoxer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nanliSKy/SwiftBoxer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nanliSKy": "nan.li02@hand-china.com"
+  },
+  "source": {
+    "git": "https://github.com/nanliSKy/SwiftBoxer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SwiftBoxer/Classes/**/*"
+}

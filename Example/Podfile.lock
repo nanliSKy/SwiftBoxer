@@ -1,0 +1,16 @@
+PODS:
+  - SwiftBoxer (0.1.0)
+
+DEPENDENCIES:
+  - SwiftBoxer (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftBoxer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftBoxer: 9de0c89824a15bd0bca86164374b056c874d58e0
+
+PODFILE CHECKSUM: ccc2dad4d07d24905f61178342606e6bf5e52fd0
+
+COCOAPODS: 1.10.0

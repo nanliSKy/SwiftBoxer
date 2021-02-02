@@ -1,0 +1,6 @@
+framework module SwiftBoxer {
+  umbrella header "SwiftBoxer-umbrella.h"
+
+  export *
+  module * { export * }
+}
